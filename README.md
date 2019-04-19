@@ -2,9 +2,9 @@
 See Readme for instructions on how to run the app
 
 ## Docker Section 
-###### Build Docker images 
-		```sudo docker build -t <username>/pali_challenge .``` 
-	# Show Docker images 
+### Build Docker images 
+```sudo docker build -t <username>/pali_challenge .``` 
+### Show Docker images 
 	```sudo docker images``` 
 	# Run Docker container 
 	```sudo docker run -p 6000:3000 <username>/pali_challenge``` 
