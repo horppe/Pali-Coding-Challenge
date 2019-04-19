@@ -1,13 +1,12 @@
 # Pali-Coding-Challenge
-See Readme for instructions on how to run the app
+### Below are the instructions to run the app localhost and on docker
 
-## Docker Section 
 ### Build Docker images 
-```sudo docker build -t <username>/pali_challenge .``` 
-### Show Docker images
-```sudo docker images``` 
-# Run Docker container 
-```sudo docker run -p 6000:3000 <username>/pali_challenge``` 
+    ```sudo docker build -t <username>/pali_challenge .``` 
+  ### Show Docker images
+    ```sudo docker images``` 
+  ### Run Docker container 
+    ```sudo docker run -p 6000:3000 <username>/pali_challenge``` 
 # On Docker Linux: Meal id test 
 ```
 curl --header "Content-Type: application/json" \ 
