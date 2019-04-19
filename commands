@@ -1,13 +1,52 @@
-# On Linux: Curl post request
-    curl --header "Content-Type: application/json" \
-  --request POST \
-  --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \
-    http://localhost:3000/
+# Docker Section
+    # Build Docker images
+        sudo docker build -t <username>/pali_challenge .
+
+    # Show Docker images 
+        sudo docker images
+
+    # Run Docker container 
+        sudo docker run -p 6000:3000 <username>/pali_challenge
 
 
-  --data '{"mealIdList": ["52795", "556"]}' \
-  http://localhost:6000/
+    # On Docker Linux: Meal id test
+        curl --header "Content-Type: application/json" \
+        --request POST \
+        --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \
+        http://localhost:6000/
 
 
-  # On Windows: Curl post request
-    curl --header "Content-Type: application/json"  --request POST   --data '{"""username""":"""xyz""","""password""":"""xyz"""}'  http://localhost:3000/api/login
+
+    # On Docker Windows: Meal id test
+        curl --header "Content-Type: application/json" ^
+        --request POST ^
+        --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ ^
+        http://localhost:6000/
+
+    # On Docker Linux: Incorrect meal id test
+        curl --header "Content-Type: application/json" \
+        --request POST \
+         --data '{"mealIdList": ["52795", "556"]}' \
+        http://localhost:6000/
+
+
+
+    # On Docker Windows: Incorrect meal id test
+        curl --header "Content-Type: application/json" ^
+        --request POST ^
+        --data '{"mealIdList": ["52795", "556"]}' ^
+        http://localhost:6000/
+
+
+# Run locally on localhost 
+    # On Linux: Curl post request
+        curl --header "Content-Type: application/json" \
+        --request POST \
+        --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \
+        http://localhost:3000/
+
+    # On Windows: Curl post request
+        curl --header "Content-Type: application/json" ^
+        --request POST ^  
+        --data '{"""username""":"""xyz""","""password""":"""xyz"""}' ^
+        http://localhost:3000/api/login
