@@ -2,7 +2,11 @@
     curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \
-  http://localhost:3000/
+    http://localhost:3000/
+
+
+  --data '{"mealIdList": ["52795", "556"]}' \
+  http://localhost:6000/
 
 
   # On Windows: Curl post request

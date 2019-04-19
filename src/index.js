@@ -30,7 +30,7 @@ app.post('/', async (req, res) =>{
             const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`);
             const responseObj = await response.json();
 
-            if(responseObj.meals.length > 0){
+            if(responseObj.meals && responseObj.meals.length > 0){
                 console.log("Request has valid parameters")
                 // Update current mealId for match
                 currentMealId = mealId
