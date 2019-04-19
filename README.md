@@ -3,19 +3,21 @@ See Readme for instructions on how to run the app
 
 ## Docker Section 
 ### Build Docker images 
-``` bash sudo docker build -t <username>/pali_challenge .``` 
+```sudo docker build -t <username>/pali_challenge .``` 
 ### Show Docker images
-```bash sudo docker images``` 
+```sudo docker images``` 
 # Run Docker container 
-```bash sudo docker run -p 6000:3000 <username>/pali_challenge``` 
+```sudo docker run -p 6000:3000 <username>/pali_challenge``` 
 # On Docker Linux: Meal id test 
-``` bash 
-	curl --header "Content-Type: application/json" \ --request POST \ --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ http://localhost:6000/ ``` 
-	# On Docker Windows: Meal id test 
+```curl --header "Content-Type: application/json" \ 
+--request POST \ 
+--data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ 
+http://localhost:6000/ ``` 
+# On Docker Windows: Meal id test 
 ``` bash curl --header "Content-Type: application/json" ^ --request POST ^ --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ ^ http://localhost:6000/```
-	# On Docker Linux: Incorrect meal id test 
+# On Docker Linux: Incorrect meal id test 
 ``` bash curl --header "Content-Type: application/json" \ --request POST \ --data '{"mealIdList": ["52795", "556"]}' \ http://localhost:6000/ ``` 
-	# On Docker Windows: Incorrect meal id test ``` bash curl --header "Content-Type: application/json" ^ --request POST ^ --data '{"mealIdList": ["52795", "556"]}' ^ http://localhost:6000/ ``` 
+# On Docker Windows: Incorrect meal id test ``` bash curl --header "Content-Type: application/json" ^ --request POST ^ --data '{"mealIdList": ["52795", "556"]}' ^ http://localhost:6000/ ``` 
 # Run locally on localhost 
 # Run the app in terminal or shell 
 ``` bash npm start```
