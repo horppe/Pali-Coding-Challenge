@@ -3,7 +3,7 @@ See Readme for instructions on how to run the app
 
 ## Docker Section 
 ### Build Docker images 
-```bash sudo docker build -t <username>/pali_challenge .``` 
+``` bash sudo docker build -t <username>/pali_challenge .``` 
 ### Show Docker images
 ```bash sudo docker images``` 
 # Run Docker container 
