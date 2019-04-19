@@ -14,13 +14,15 @@ npm install
 npm start
 ```
 ### On Linux: Curl post request 
+<p>On another terminal window</p>
 ``` bash 
 curl --header "Content-Type: application/json" \
                 --request POST \
                 --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \
                 http://localhost:3000/
 ``` 
-### On Windows: Curl post request 
+### On Windows: Curl post request
+<p>On another terminal window</p>
 ``` batch 
 curl --header "Content-Type: application/json" ^
                 --request POST ^
@@ -44,28 +46,32 @@ sudo docker images
 sudo docker run -p 6000:3000 <username>/pali_challenge
 ``` 
 ### Test the Application
-#### On Docker Linux: Meal id test 
+#### On Docker Linux: Meal id test
+<p>On another terminal window</p>
 ``` bash
 curl --header "Content-Type: application/json" \
 --request POST \
 --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \
 http://localhost:6000/
 ``` 
-#### On Docker Windows: Meal id test 
+#### On Docker Windows: Meal id test
+<p>On another terminal window</p>
 ``` batch
 curl --header "Content-Type: application/json" ^
 --request POST ^
 --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ ^
 http://localhost:6000/
 ```
-#### On Docker Linux: Incorrect meal id test 
+#### On Docker Linux: Incorrect meal id test
+<p>On another terminal window</p>
 ``` bash
 curl --header "Content-Type: application/json" \
 --request POST \
 --data '{"mealIdList": ["52795", "556"]}' \
 http://localhost:6000/
 ``` 
-#### On Docker Windows: Incorrect meal id test 
+#### On Docker Windows: Incorrect meal id test
+<p>On another terminal window</p>
 ``` batch
 curl --header "Content-Type: application/json" ^
 --request POST ^
