@@ -2,7 +2,7 @@
 <p> Below are the instructions to run the app on localhost and docker</p>
 
 ## On Localhost
-<p>Run locally on localhost</p>
+<p>Run on localhost</p>
 
 ### Install the app with npm
 ```
