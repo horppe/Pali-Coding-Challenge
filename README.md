@@ -3,6 +3,7 @@
 
 ## On Localhost
 <p>Run locally on localhost</p>
+
 ### Run the app in terminal or shell 
 ```
 npm start
