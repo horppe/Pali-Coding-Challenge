@@ -1,8 +1,8 @@
 # Pali-Coding-Challenge
 See Readme for instructions on how to run the app
 
-# # Docker Section 
-	# Build Docker images 
+## Docker Section 
+	### Build Docker images 
 		```sudo docker build -t <username>/pali_challenge .``` 
 	# Show Docker images 
 	```sudo docker images``` 
