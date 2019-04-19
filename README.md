@@ -1,5 +1,5 @@
 # Pali-Coding-Challenge
-<p> Below are the instructions to run the app localhost and on docker</p>
+<p> Below are the instructions to run the app on localhost and docker</p>
 
 ## Docker
 ### Build Docker images 
