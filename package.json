@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon --exec babel-node src/index.js",
-    "build": "rm -rf dist && mkdir dist && babel src --out-dir dist",
+    "clear": "rm -rf dist ; mkdir dist",
+    "build": "npm run clear && babel src --out-dir dist",
     "serve": "nodemon dist/index.js"
   },
   "author": "",
