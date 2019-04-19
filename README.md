@@ -4,6 +4,11 @@
 ## On Localhost
 <p>Run locally on localhost</p>
 
+### Install the app with npm
+```
+npm install
+```
+
 ### Run the app in terminal or shell 
 ```
 npm start
