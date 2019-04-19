@@ -39,6 +39,10 @@
 
 
 # Run locally on localhost 
+
+    # Run the app in terminal or shell 
+        npm start
+        
     # On Linux: Curl post request
         curl --header "Content-Type: application/json" \
         --request POST \
