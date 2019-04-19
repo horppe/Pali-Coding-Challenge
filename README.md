@@ -9,12 +9,16 @@ See Readme for instructions on how to run the app
 # Run Docker container 
 ```sudo docker run -p 6000:3000 <username>/pali_challenge``` 
 # On Docker Linux: Meal id test 
-```curl --header "Content-Type: application/json" \ 
+```
+curl --header "Content-Type: application/json" \ 
 --request POST \ 
 --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ 
-http://localhost:6000/ ``` 
+http://localhost:6000/ 
+``` 
 # On Docker Windows: Meal id test 
-``` bash curl --header "Content-Type: application/json" ^ --request POST ^ --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ ^ http://localhost:6000/```
+```
+bash curl --header "Content-Type: application/json" ^ --request POST ^ --data '{"mealIdList": ["52795", "52956", "52831", "52854"]}' \ ^ http://localhost:6000/
+```
 # On Docker Linux: Incorrect meal id test 
 ``` bash curl --header "Content-Type: application/json" \ --request POST \ --data '{"mealIdList": ["52795", "556"]}' \ http://localhost:6000/ ``` 
 # On Docker Windows: Incorrect meal id test ``` bash curl --header "Content-Type: application/json" ^ --request POST ^ --data '{"mealIdList": ["52795", "556"]}' ^ http://localhost:6000/ ``` 
